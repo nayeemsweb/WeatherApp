@@ -90,6 +90,8 @@ body{
 
 .more-info-label{
     color: var(--white);
+    text-align: center;
+    font-weight: 900;
 }
 
 .more-info-container{
@@ -118,7 +120,7 @@ body{
 }
 
 .info-block-label img {
-    width: 1.5em;
+    width: 2.5em;
 }
   
 .info-block-label span {
