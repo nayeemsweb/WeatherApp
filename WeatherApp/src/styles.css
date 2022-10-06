@@ -23,6 +23,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: var(--shadow-dark) 2px 2px 10px;
 }
 
 .container{
@@ -50,6 +51,18 @@ body{
     height: 100%;
 }
 
+.lower-data {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
 .weather-data{
     position: relative;
     z-index: 1;
@@ -59,8 +72,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-shadow: var(--shadow-dark) 1px 0 10px;
+    justify-content: center;    
 }
 
 .location{
@@ -75,3 +87,49 @@ body{
     text-align: center;
     font-weight: 900;
 }
+
+.more-info-label{
+    color: var(--white);
+}
+
+.more-info-container{
+    flex: 1;
+    background-color: var(--shadow-light);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info-block{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.info-block-label{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-block-label img {
+    width: 1.5em;
+}
+  
+.info-block-label span {
+    color: var(--white);
+    font-size: 0.8em;
+}
+
+.info-block-value {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--white);
+  }
