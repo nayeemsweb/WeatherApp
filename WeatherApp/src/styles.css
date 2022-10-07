@@ -27,7 +27,7 @@ body{
 }
 
 .container{
-    width: 450px;
+    width: 500px;
     height: 80vh;
     background-color: var(--blue-2);
     border-radius: 20px;

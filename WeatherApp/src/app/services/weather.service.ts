@@ -13,12 +13,9 @@ export class WeatherService {
 
   getWeatherData(cityName: string) : Observable<WeatherData>{
     return this.http.get<WeatherData>(environment.weatherApiBaseUrl, {
-      headers: new HttpHeaders()
-      .set(environment.XRapidAPIHostHeaderName, environment.XRapidAPIHostHeaderValue)
-      .set(environment.XRapidAPIKeyHeaderName, environment.XRapidAPIKeyHeaderValue),
       params: new HttpParams()
       .set('q', cityName)
-      .set('appid', 'da0f9c8d90bde7e619c3ec47766a42f4')
+      .set('appid', 'beeeb57d4c66323cb0267395e3a64f51')
       .set('units', 'metric')
     })
   }
